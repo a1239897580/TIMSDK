@@ -209,21 +209,21 @@ class _TIMUIKItHistoryMessageListItemState
         "id": "copyMessage",
         "icon": "images/copy_message.png"
       },
-      {
-        "label": ttBuild.imt("转发"),
-        "id": "forwardMessage",
-        "icon": "images/forward_message.png"
-      },
-      {
-        "label": ttBuild.imt("多选"),
-        "id": "multiSelect",
-        "icon": "images/multi_message.png"
-      },
-      {
-        "label": ttBuild.imt("引用"),
-        "id": "replyMessage",
-        "icon": "images/reply_message.png"
-      },
+      // {
+      //   "label": ttBuild.imt("转发"),
+      //   "id": "forwardMessage",
+      //   "icon": "images/forward_message.png"
+      // },
+      // {
+      //   "label": ttBuild.imt("多选"),
+      //   "id": "multiSelect",
+      //   "icon": "images/multi_message.png"
+      // },
+      // {
+      //   "label": ttBuild.imt("引用"),
+      //   "id": "replyMessage",
+      //   "icon": "images/reply_message.png"
+      // },
       {
         "label": ttBuild.imt("删除"),
         "id": "delete",

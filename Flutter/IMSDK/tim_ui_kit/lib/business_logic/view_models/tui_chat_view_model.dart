@@ -59,7 +59,6 @@ class TUIChatViewModel extends ChangeNotifier {
   ValueChanged<String>? _setInputField;
 
   TUIChatViewModel() {
-    removeAdvanceListener();
     initAdvanceListener();
     initMessageMapFromLocal();
   }
