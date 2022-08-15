@@ -11,9 +11,9 @@ import 'package:video_player/video_player.dart';
 import 'center_play_button.dart';
 
 class VideoCustomControls extends StatefulWidget {
-  const VideoCustomControls({required this.downloadFn, Key? key})
+  const VideoCustomControls({this.downloadFn, Key? key})
       : super(key: key);
-  final void Function() downloadFn;
+  final void Function()? downloadFn;
 
   @override
   State<StatefulWidget> createState() {

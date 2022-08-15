@@ -573,7 +573,7 @@ class _InputTextFieldState extends State<TIMUIKitInputTextField> {
             children: [
               _buildRepliedMessage(value),
               Container(
-                color: widget.backgroundColor ?? hexToColor("EBF0F6"),
+                color: widget.backgroundColor ?? hexToColor("FFFFFF"),
                 child: SafeArea(
                   child: Column(
                     children: [
@@ -601,12 +601,15 @@ class _InputTextFieldState extends State<TIMUIKitInputTextField> {
                                     });
                                   }
                                 },
-                                child: SvgPicture.asset(
-                                  showSendSoundText
-                                      ? 'images/keyboard.svg'
-                                      : 'images/voice.svg',
+                                child: showSendSoundText
+                                    ?Image.asset(
+                                  'images/keyboard.png',
                                   package: 'tim_ui_kit',
-                                  color: const Color.fromRGBO(68, 68, 68, 1),
+                                  height: 28,
+                                  width: 28,
+                                ):Image.asset(
+                                  'images/voice.png',
+                                  package: 'tim_ui_kit',
                                   height: 28,
                                   width: 28,
                                 ),
@@ -620,36 +623,42 @@ class _InputTextFieldState extends State<TIMUIKitInputTextField> {
                                       onDownBottom: goDownBottom,
                                       conversationID: widget.conversationID,
                                       conversationType: widget.conversationType)
-                                  : TextField(
-                                      onChanged: debounceFunc,
-                                      maxLines: 4,
-                                      minLines: 1,
-                                      controller: textEditingController,
-                                      focusNode: focusNode,
-                                      onTap: () {
-                                        goDownBottom();
-                                        setState(() {
-                                          showKeyboard = true;
-                                          showEmojiPanel = false;
-                                          showMore = false;
-                                        });
-                                      },
-                                      keyboardType: TextInputType.text,
-                                      textInputAction: TextInputAction.send,
-                                      onEditingComplete: onSubmitted,
-                                      textAlignVertical:
-                                          TextAlignVertical.center,
-                                      decoration: InputDecoration(
-                                          border: InputBorder.none,
-                                          hintStyle: const TextStyle(
-                                            // fontSize: 10,
-                                            color: Color(0xffAEA4A3),
-                                          ),
-                                          fillColor: Colors.white,
-                                          filled: true,
-                                          isDense: true,
-                                          hintText: widget.hintText ?? ''),
-                                    ),
+                                  : Container(
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.all(Radius.circular(14))
+                                ),
+                                clipBehavior:Clip.hardEdge,
+                                child: TextField(
+                                  onChanged: debounceFunc,
+                                  maxLines: 4,
+                                  minLines: 1,
+                                  controller: textEditingController,
+                                  focusNode: focusNode,
+                                  onTap: () {
+                                    goDownBottom();
+                                    setState(() {
+                                      showKeyboard = true;
+                                      showEmojiPanel = false;
+                                      showMore = false;
+                                    });
+                                  },
+                                  keyboardType: TextInputType.text,
+                                  textInputAction: TextInputAction.send,
+                                  onEditingComplete: onSubmitted,
+                                  textAlignVertical:
+                                  TextAlignVertical.center,
+                                  decoration: InputDecoration(
+                                      border: InputBorder.none,
+                                      hintStyle: const TextStyle(
+                                        fontSize: 14,
+                                        color: Color(0xffAEA4A3),
+                                      ),
+                                      fillColor: hexToColor('F0F3F6'),
+                                      filled: true,
+                                      isDense: true,
+                                      hintText: widget.hintText ?? '说点什么吧~'),
+                                ),
+                              ),
                             ),
                             const SizedBox(
                               width: 10,
@@ -660,12 +669,16 @@ class _InputTextFieldState extends State<TIMUIKitInputTextField> {
                                   _openEmojiPanel();
                                   goDownBottom();
                                 },
-                                child: SvgPicture.asset(
-                                  showEmojiPanel
-                                      ? 'images/keyboard.svg'
-                                      : 'images/face.svg',
+                                child: showEmojiPanel
+                                    ? Image.asset(
+                                  'images/keyboard.png',
                                   package: 'tim_ui_kit',
-                                  color: const Color.fromRGBO(68, 68, 68, 1),
+                                  height: 28,
+                                  width: 28,
+                                )
+                                    : Image.asset(
+                                  'images/face.png',
+                                  package: 'tim_ui_kit',
                                   height: 28,
                                   width: 28,
                                 ),
@@ -679,10 +692,9 @@ class _InputTextFieldState extends State<TIMUIKitInputTextField> {
                                   _openMore();
                                   goDownBottom();
                                 },
-                                child: SvgPicture.asset(
-                                  'images/add.svg',
+                                child: Image.asset(
+                                  'images/add.png',
                                   package: 'tim_ui_kit',
-                                  color: const Color.fromRGBO(68, 68, 68, 1),
                                   height: 28,
                                   width: 28,
                                 ),

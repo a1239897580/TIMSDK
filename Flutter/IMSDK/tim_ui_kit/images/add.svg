@@ -1,22 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56px" height="57px" viewBox="0 0 56 57" version="1.1">
-  <title>编组 4</title>
-  <defs>
-    <filter color-interpolation-filters="auto" id="filter-1">
-      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 1.000000 0"></feColorMatrix>
-    </filter>
-  </defs>
-  <g id="当前版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-    <g id="更多" transform="translate(-662.000000, -1046.000000)">
-      <g id="编组-11备份-2" transform="translate(0.000000, 1025.000000)">
-        <g id="编组-4" transform="translate(33.000000, 16.000000)" filter="url(#filter-1)">
-          <g transform="translate(629.000000, 5.853448)">
-            <circle id="椭圆形备份-27" stroke="#8F959E" stroke-width="4" cx="28" cy="28" r="26"></circle>
-            <rect id="矩形备份-8" fill="#8F959E" x="15" y="27" width="26" height="4" rx="1"></rect>
-            <rect id="矩形备份-8" fill="#8F959E" transform="translate(28.000000, 29.000000) rotate(-90.000000) translate(-28.000000, -29.000000) " x="15" y="27" width="26" height="4" rx="1"></rect>
-          </g>
-        </g>
-      </g>
-    </g>
-  </g>
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="103px" height="103px">
+<path fill-rule="evenodd"  stroke-width="3px" stroke="rgb(207, 207, 207)" fill="rgb(240, 243, 246)"
+ d="M51.500,1.500 C79.114,1.500 101.500,23.885 101.500,51.500 C101.500,79.114 79.114,101.500 51.500,101.500 C23.886,101.500 1.500,79.114 1.500,51.500 C1.500,23.885 23.886,1.500 51.500,1.500 Z"/>
+<path fill-rule="evenodd"  stroke-width="4px" stroke="rgb(54, 51, 50)" fill-opacity="0" fill="rgb(255, 255, 255)"
+ d="M51.500,25.500 C65.859,25.500 77.500,37.140 77.500,51.500 C77.500,65.859 65.859,77.500 51.500,77.500 C37.140,77.500 25.500,65.859 25.500,51.500 C25.500,37.140 37.140,25.500 51.500,25.500 Z"/>
+<path fill-rule="evenodd"  fill="rgb(54, 51, 50)"
+ d="M63.499,53.500 L53.500,53.500 L53.500,63.500 C53.500,64.604 52.604,65.500 51.500,65.500 C50.395,65.500 49.499,64.604 49.499,63.500 L49.499,53.500 L39.500,53.500 C38.395,53.500 37.500,52.604 37.500,51.500 C37.500,50.395 38.395,49.500 39.500,49.500 L49.499,49.500 L49.499,39.500 C49.499,38.395 50.395,37.500 51.500,37.500 C52.604,37.500 53.500,38.395 53.500,39.500 L53.500,49.500 L63.499,49.500 C64.604,49.500 65.500,50.395 65.500,51.500 C65.500,52.604 64.604,53.500 63.499,53.500 Z"/>
 </svg>

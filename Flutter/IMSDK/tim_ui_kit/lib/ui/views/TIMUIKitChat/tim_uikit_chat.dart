@@ -234,28 +234,31 @@ class _TUIChatState extends State<TIMUIKitChat> {
                             alignment: Alignment.topCenter,
                             child: Listener(
                               onPointerMove: closePanel,
-                              child: TIMUIKitHistoryMessageListContainer(
-                                groupAtInfoList: widget.groupAtInfoList,
-                                tongueItemBuilder: widget.tongueItemBuilder,
-                                convId: widget.conversationID,
-                                onLongPressForOthersHeadPortrait:
-                                    (String? userId, String? nickName) {
-                                  if (widget.conversationType != 1) {
-                                    textFieldController.longPressToAt(
-                                        nickName, userId);
-                                  }
-                                },
-                                mainHistoryListConfig:
-                                    widget.mainHistoryListConfig,
-                                initFindingMsg: widget.initFindingMsg,
-                                exteraTipsActionItemBuilder:
-                                    widget.exteraTipsActionItemBuilder,
-                                conversationType: widget.conversationType,
-                                scrollController: autoController,
-                                onTapAvatar: widget.onTapAvatar,
-                                showNickName: widget.showNickName,
-                                messageItemBuilder: widget.messageItemBuilder,
-                                conversationID: widget.conversationID,
+                              child: Container(
+                                color: Color.fromRGBO(245, 245, 245, 1),
+                                child: TIMUIKitHistoryMessageListContainer(
+                                  groupAtInfoList: widget.groupAtInfoList,
+                                  tongueItemBuilder: widget.tongueItemBuilder,
+                                  convId: widget.conversationID,
+                                  onLongPressForOthersHeadPortrait:
+                                      (String? userId, String? nickName) {
+                                    if (widget.conversationType != 1) {
+                                      textFieldController.longPressToAt(
+                                          nickName, userId);
+                                    }
+                                  },
+                                  mainHistoryListConfig:
+                                  widget.mainHistoryListConfig,
+                                  initFindingMsg: widget.initFindingMsg,
+                                  exteraTipsActionItemBuilder:
+                                  widget.exteraTipsActionItemBuilder,
+                                  conversationType: widget.conversationType,
+                                  scrollController: autoController,
+                                  onTapAvatar: widget.onTapAvatar,
+                                  showNickName: widget.showNickName,
+                                  messageItemBuilder: widget.messageItemBuilder,
+                                  conversationID: widget.conversationID,
+                                ),
                               ),
                             ))),
                     isMultiSelect

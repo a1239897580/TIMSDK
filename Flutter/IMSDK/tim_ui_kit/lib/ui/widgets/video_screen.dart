@@ -143,7 +143,7 @@ class _VideoScreenState extends State<VideoScreen> {
           showControlsOnInitialize: false,
           allowPlaybackSpeedChanging: false,
           aspectRatio: w == 0 || h == 0 ? null : w / h,
-          customControls: VideoCustomControls(downloadFn: _saveVideo));
+      );
       setState(() {
         videoPlayerController = player;
         chewieController = controller;

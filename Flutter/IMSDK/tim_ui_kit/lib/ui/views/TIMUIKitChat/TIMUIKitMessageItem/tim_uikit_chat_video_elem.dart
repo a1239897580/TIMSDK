@@ -159,7 +159,7 @@ class _TIMUIKitVideoElemState extends State<TIMUIKitVideoElem> {
                                     child: Image.file(
                                         File(widget
                                             .message.videoElem!.snapshotPath!),
-                                        fit: BoxFit.fitWidth),
+                                        fit: BoxFit.cover),
                                   )
                                 : (widget.message.videoElem?.localSnapshotUrl ==
                                             null ||
@@ -172,7 +172,7 @@ class _TIMUIKitVideoElemState extends State<TIMUIKitVideoElem> {
                                                 MemoryImage(kTransparentImage)),
                                         cacheKey:
                                             widget.message.videoElem!.UUID,
-                                        fit: BoxFit.fitWidth,
+                                        fit: BoxFit.cover,
                                         imageUrl: widget
                                             .message.videoElem!.snapshotUrl!,
                                         errorWidget: (context, url, error) =>
@@ -181,7 +181,7 @@ class _TIMUIKitVideoElemState extends State<TIMUIKitVideoElem> {
                                     : Image.file(
                                         File(widget.message.videoElem!
                                             .localSnapshotUrl!),
-                                        fit: BoxFit.fitWidth)),
+                                        fit: BoxFit.cover)),
                         Positioned.fill(
                           // alignment: Alignment.center,
                           child: Center(
